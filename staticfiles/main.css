@@ -1,0 +1,13 @@
+body{
+	background-image: url("/static/main.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.maxwindow{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

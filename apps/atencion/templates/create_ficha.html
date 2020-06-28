@@ -1,0 +1,21 @@
+{% extends "base/main.html" %}
+	{% block body %}
+
+		{% load bootstrap4 %}
+		<div class="maxwindow">
+			<div class="container">
+				<h1>UATF</h1>
+				<form action="" method="post" class="form card card-body bg-light">
+					{% csrf_token %}
+
+					{% bootstrap_form form %}
+
+					{% buttons %}
+						<div class="d-flex justify-content-center">
+						    <button type="submit" class="btn btn-primary">Enviar</button>
+						</div>
+					{% endbuttons %}
+				</form>
+			</div>
+		</div>
+	{% endblock body %}
